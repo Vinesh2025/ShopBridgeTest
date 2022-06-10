@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1367px) {
+label{font-size:12px !important;}
+.form-inline{text-align:center;}
+.form-inline .common-btn{margin:20px 0; text-align:center;}
+}
+@media screen and (max-width: 979px) {
+#menu-accordian	{left:-100%;}
+.page-wrapper{margin:0;}
+footer p{margin:0 0 0 10px;}
+.menu-toggle-active #menu-accordian	{left:0;}
+label{margin-bottom:5px !important;}
+
+}

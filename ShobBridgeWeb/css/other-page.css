@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face { font-family: 'droid_sansregular'; src: url('../fonts/DroidSans-webfont.eot'); src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DroidSans-webfont.woff') format('woff'), url('../fonts/DroidSans-webfont.ttf') format('truetype'), url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg'); font-weight: normal; font-style: normal; }
+::-webkit-input-placeholder {
+ color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #fff;
+}
+
+:-ms-input-placeholder {
+ color: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-appearance: none; }
+:focus { outline: 0 !important; }
+a { -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; color: #77BDA9; text-decoration: none; }
+a:hover, a:focus { outline: none; color: #E58F8B; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+label { font-weight: normal; }
+body { background: #424F5F; font-size: 14px; line-height: 1.2; font-family: 'droid_sansregular'; color: #000; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.logo-container { text-align: center; margin: 0 0 60px 0; }
+.logo-container a { color: #fff; text-align: center; font-size: 50px; display: inline-block; margin: 0 auto; }
+.logo-container a:hover { text-decoration: none; color: #E58F8B; }
+.login-container, .page-not-found-container, .unauthorized-container { width: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); }
+.login-container .user-img { border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%; width: 200px; height: 200px; border: 1px solid #58A38C; padding: 20px; float: left; background: #323E4C; position: relative; z-index: 1; }
+.login-container .user-img img { display: block; width: 100%; height: 100%; }
+.login-container .login-form-inputs { float: left; width: 400px; margin: 45px 0 0 -30px; }
+.login-container .login-form-inputs .form-control { padding: 20px 45px 20px 85px; display: block; background: #323E4C; border: none; width: 100%; color: #fff; border-radius: 0 70px 70px 0; -moz-border-radius: 0 70px 70px 0; -ms-border-radius: 0 70px 70px 0; -o-border-radius: 0 70px 70px 0; -webkit-border-radius: 0 70px 70px 0; }
+.login-container .email-input, .login-container .password-input { position: relative; margin-bottom: 1px; }
+.login-container .email-input i, .login-container .password-input i { color: #fff; font-size: 26px; left: 40px; position: absolute; top: 11px; }
+.login-btn-container { position: absolute; right: -20px; top: 60px; }
+.login-btn-container .login-btn { background: none; border: none; height: 80px; width: 80px; background: #E58F8B; border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%; font-size: 40px; color: #fff; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; cursor: pointer; }
+.login-btn-container .login-btn:hover { background: #75B7A6; }
+.login-form-container { position: relative; }
+.forgot-pass-container .login-form-inputs { margin: 75px 0 0 -30px; }
+.change-pass-container .login-form-inputs { margin: 26px 0 0 -31px }
+.change-pass-container .login-form-inputs .form-control { padding: 16px 45px 16px 85px; }
+.page-not-found-container, .unauthorized-container { text-align: center; }
+.page-not-found-container h1 { font-size: 150px; color: #E58F8B; margin: 0 0 20px 0; }
+.page-not-found-container h2 { font-size: 35px; color: #E58F8B; margin: 0 0 50px 0; }
+.page-not-found-container .page-not-found-content a, .unauthorized-container .unauthorized-content a { font-size: 18px; }
+.unauthorized-container h1 { font-size: 60px; color: #E58F8B; margin: 0 0 60px 0; }
+.signin-container { width: 500px; margin: 20px auto 70px; }
+.signin-form-container { position: relative; }
+.signin-container .user-img { border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%; width: 200px; height: 200px; border: 1px solid #58A38C; padding: 20px; background: #323E4C; position: relative; z-index: 1; margin: 0 auto 20px; }
+.signin-container .user-img img { display: block; width: 100%; height: 100%; }
+.signin-container .signin-form-inputs .form-control { padding: 15px 20px; display: block; background: #323E4C; border: none; width: 100%; color: #fff; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.signin-container .signin-form-inputs .form-group { position: relative; margin-bottom: 15px; }
+.signin-form-inputs { padding: 30px 30px 100px 30px; border: 1px solid #323E4C; }
+.signin-btn-container { position: absolute; left: 50%; margin-left: -40px; bottom: -40px; }
+.signin-btn { background: none; border: none; height: 80px; width: 80px; background: #E58F8B; border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%; font-size: 40px; color: #fff; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; cursor: pointer; }
+.signin-btn:hover { background: #75B7A6; }
+.custom-select { background: #323E4C url(../images/select-arrow.png) no-repeat 97% 50%; overflow: hidden; width: 100%; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.custom-select select { border: none; box-shadow: none; background: transparent; background-image: none; padding: 15px 20px; vertical-align: middle; width: 105%; color: #fff; }
+.custom-select select option { padding: 2px 15px; }
+.custom-select select option:not(:checked) { color: #000; background: #fff; }
+.custom-select select:focus { outline: none; }
+.other-page-header{color:#fff; text-align:center; margin:40px 0; font-weight:normal; font-size:24px;}
+.other-bottom-link{text-align:center; margin:20px 0;}
+.forgot-password-link{display:inline-block; font-size:16px;}

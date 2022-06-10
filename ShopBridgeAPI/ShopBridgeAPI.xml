@@ -1,0 +1,1747 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HRSenseWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.GetActivities(Entities.Models.PagingRequest)">
+            <summary>
+            To get Date Format Pagination.
+            </summary>
+            <param name="paging">PagingRequest Paging</param>
+            <returns>List Of Activity by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.GetActivityDrp">
+            <summary>
+            To Get Activity Dropdownlist
+            </summary>
+            <returns>Dropdown List of Activity</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.GetActivityById(System.Int32)">
+            <summary>
+            To Get Activity By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Activity By ID</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.AddActivity(Entities.Models.Activity)">
+            <summary>
+            To Add Activity
+            </summary>
+            <param name="body">Activity body</param>
+            <returns>Insert Activity Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.EditActivity(System.Int32,Entities.Models.Activity)">
+            <summary>
+             To Edit Activity Data
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">Activity body</param>
+            <returns>Update Activity Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.DeleteActivityById(System.Int32)">
+            <summary>
+            To Delete Activity By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>>Delete Activity data By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityController.DeleteAllActivity">
+            <summary>
+            To Delete All Activity Data
+            </summary>
+            <returns>Deleted All Activity Data Sucessfully</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.GetActivityGroup(Entities.Models.PagingRequest)">
+            <summary>
+            To get ActivityGroup Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of ActivityGroup by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.GetActivityGroupDrp">
+            <summary>
+            To Get ActivityGroup Dropdownlist
+            </summary>
+            <returns>>Dropdown List of ActivityGroup</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.GetActivityGroupById(System.Int32)">
+            <summary>
+            To Get ActivityGroup By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of ActivityGroup By ID</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.AddActivityGroup(Entities.Models.ActivityGroup)">
+            <summary>
+            To Add ActivityGroup
+            </summary>
+            <param name="body">ActivityGroup body</param>
+            <returns>Insert ActivityGroup Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.EditActivityGroup(System.Int32,Entities.Models.ActivityGroup)">
+            <summary>
+            To Edit ActivityGroup Data
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">ActivityGroup body</param>
+            <returns>Update  ActivityGroup Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.DeleteActivityGroupById(System.Int32)">
+            <summary>
+            To Delete ActivityGroup By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Delete ActivityGroup data By Id Sucessfully</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ActivityGroupController.DeleteAllActivityGroup">
+            <summary>
+            To Delete All ActivityGroup Data
+            </summary>
+            <returns>>Deleted All ActivityGroup Data Sucessfully</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.GetApplyRequests(Entities.Models.PagingRequest)">
+            <summary>
+            To Get ApplyRequest Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of ApplyRequest by Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.getApplyRequestsDrp">
+            <summary>
+            To Get ApplyRequest DropdownList
+            </summary>
+            <returns>DropdownList of ApplyRequest</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.getApplyRequestById(System.Int32)">
+            <summary>
+            To Get ApplyRequest Data By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of ApplyRequest By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.addApplyRequest(Entities.Models.ApplyRequest)">
+            <summary>
+            To Add ApplyRequest 
+            </summary>
+            <param name="body">ApplyRequest body</param>
+            <returns>Insert ApplyRequest Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.editApplyRequest(System.Int32,Entities.Models.ApplyRequest)">
+            <summary>
+            To Edit ApplyRequest
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">ApplyRequest body</param>
+            <returns>Update ApplyRequest Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.deleteApplyRequestById(System.Int32)">
+            <summary>
+            To Delete ApplyRequest By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Apply Request Data Deleted By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.ApplyRequestController.deleteAllApplyRequest">
+            <summary>
+            To Delete All ApplyRequest Data
+            </summary>
+            <returns>All ApplyRequest Data Deleted</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandenceApprovalController.getAttandenceApprovalSettingsbyID(System.Int32)">
+            <summary>
+            To get AttandenceApprovalSettings By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of AttandenceApprovalSettings By Id </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandenceApprovalController.addAttandenceApprovalSettings(Entities.Models.AttandenceApprovalSettings)">
+            <summary>
+            To Add AttandenceApprovalSettings Data.
+            </summary>
+            <param name="body">AttandenceApprovalSettings body</param>
+            <returns>Insert AttandenceApprovalSettings Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandenceConfigurationSettingController.getAttandenceConfigurationSettingsById(System.Int32)">
+            <summary>
+            To Get Attandence Configuration Settings By Id 
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Attandence Configuration Settings By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandenceConfigurationSettingController.addAttandenceConfigurationSettings(Entities.Models.AttandenceConfigurationSettings)">
+            <summary>
+            To Add Attandence Configuration Settings data.
+            </summary>
+            <param name="body">AttandenceConfigurationSettings body</param>
+            <returns>Insert Attandence Configuration Settings Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandencePlanAssignToController.GetAttandencePlanAssignDrp(System.Int32)">
+            <summary>
+            To Get AttandencePlanAssign DropDownList By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>DropdownList of AttandencePlanAssign  By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttandencePlanAssignToController.addAttandencePlanAssignTo(Entities.Models.AttandencePlanAssignTo)">
+            <summary>
+            To Add Attandence Plan Assign To Data 
+            </summary>
+            <param name="body">AttandencePlanAssignTo body</param>
+            <returns>Insert Attandence Plan Assign To Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.GetBioMatricWebClockRemotePunchById(System.Int32)">
+            <summary>
+            To Get Bio Matric Web Clock Remote Punch By Id (Attendance Cofiguration).
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Bio Matric Web Clock Remote Punch By Id (Attendance Cofiguration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.AddBioMatricWebClockRemotePunch(Entities.Models.BioMatricWebClockRemotePunch)">
+            <summary>
+            To Add Bio Matric Web Clock Remote Punch (Attendance Cofiguration).
+            </summary>
+            <param name="body">BioMatricWebClockRemotePunch body</param>
+            <returns>Insert  Bio Matric Web Clock Remote Punch Data (Attendance Cofiguration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.EditBioMatricWebClockRemotePunch(System.Int32,Entities.Models.BioMatricWebClockRemotePunch)">
+            <summary>
+            To Edit  Bio Matric Web Clock Remote Punch By Id (Attendance Cofiguration).
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">BioMatricWebClockRemotePunch body</param>
+            <returns>Update Bio Matric Web Clock Remote Punch Data By Id (Attendance Cofiguration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.GetRegularizationById(System.Int32)">
+            <summary>
+            To Get Regularization By Id (Attendance Cofiguration).
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Regularization By Id (Attendance Cofiguration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.AddRegularization(Entities.Models.RegularizationAttendanceCongifuration)">
+            <summary>
+            To Add Regularization (Attendance Congifuration)
+            </summary>
+            <param name="body">RegularizationAttendanceCongifuration body</param>
+            <returns>Insert Regularization (Attendance Congifuration) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.EditRegularization(System.Int32,Entities.Models.RegularizationAttendanceCongifuration)">
+            <summary>
+            To Edit Regularization (Attendance Congifuration) By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">RegularizationAttendanceCongifuration body</param>
+            <returns>Update Regularization (Attendance Congifuration) Data By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.GetAttendanceApprovalById(System.Int32)">
+            <summary>
+            To Get Attendance Approval By Id (Attendance Cofiguration).
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Attendance Approval By Id (Attendance Cofiguration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.AddAttendanceApproval(Entities.Models.AttendanceApproval)">
+            <summary>
+            To Add Attendance Approval (Attendance Cofiguration).
+            </summary>
+            <param name="body">AttendanceApproval body</param>
+            <returns>Insert Attendance Approval (Attendance Cofiguration) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.EditAttendanceApproval(System.Int32,Entities.Models.AttendanceApproval)">
+            <summary>
+            To Edit Attendance Approval (Attendance Cofiguration) By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">AttendanceApproval body</param>
+            <returns>Update Attendance Approval (Attendance Cofiguration) Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.GetAttendancePlanAssignByAttendancePlanId(System.Int32)">
+            <summary>
+            To Get Attendance Plan Assign By Attendance PlanId (Attendance Configuration) Tree.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List (Tree Format) of  Attendance Plan Assign By Attendance PlanId (Attendance Configuration).</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.GetAttendancePlanAssignDrp(System.Int32)">
+            <summary>
+            To Get Attendance Plan Assign (Attendance Configuration) Dropdownlist By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Dropdown List of Attendance Plan Assign (Attendance Configuration) By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.AddAttendancePlanAssign(Entities.Models.AttendancePlanAssign)">
+            <summary>
+            To Add Attendance Plan Assign (Attendance Configuration).
+            </summary>
+            <param name="body">AttendancePlanAssign body.</param>
+            <returns>Insert Attendance Plan Assign (Attendance Configuration) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.DeleteAttendancePlanAssignByOrgnizationId(System.Int32,System.Int32)">
+            <summary>
+            To Delete Attendance Plan Assign By OrgnizationId (Attendance Configuration).
+            </summary>
+            <param name="AttendancePlanId">AttendancePlanId(int)</param>
+            <param name="OrganizationId">OrganizationId(int)</param>
+            <returns>Attendance Plan Assign Data Deleted by OrgnizationId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.DeleteAttendancePlanAssignByBranchId(System.Int32,System.Int32)">
+            <summary>
+             To Delete Attendance Plan Assign By BranchId (Attendance Configuration).
+            </summary>
+            <param name="AttendancePlanId">AttendancePlanId(int)</param>
+            <param name="BranchId">BranchId(int)</param>
+            <returns>Attendance Plan Assign Data Deleted by BranchId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.DeleteAttendancePlanAssignByDepartmentId(System.Int32,System.Int32)">
+            <summary>
+             To Delete Attendance Plan Assign By DepartmentId (Attendance Configuration).
+            </summary>
+            <param name="AttendancePlanId">AttendancePlanId (int)</param>
+            <param name="DepartmentId">DepartmentId (int)</param>
+            <returns>Attendance Plan Assign Data Deleted by DepartmentId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.DeleteAttendancePlanAssignByDesignationId(System.Int32,System.Int32)">
+            <summary>
+            To Delete Attendance Plan Assign By DesignationId (Attendance Configuration).
+            </summary>
+            <param name="AttendancePlanId">AttendancePlanId</param>
+            <param name="DesignationId">DesignationId</param>
+            <returns>Attendance Plan Assign Data Deleted by DesignationId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceConfigurationController.DeleteAttendancePlanAssignByEmployeeId(System.Int32,System.Int32)">
+            <summary>
+            To Delete Attendance Plan Assign By EmployeeId (Attendance Configuration).
+            </summary>
+            <param name="AttendancePlanId">AttendancePlanId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>Attendance Plan Assign Data Deleted by EmployeeId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendances(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Employee Attendances  Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Employee Attendances by Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceCount(Entities.Models.AttendanceCount)">
+            <summary>
+            To Get Employee Attendance Count.
+            </summary>
+            <param name="aCount">AttendanceCount aCount</param>
+            <returns>Employee Attendance Count.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceGraphs(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            To Get Employee Attendances Graphs by ID, FromDate, ToDate.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="fromDate">fromDate (DateTime)</param>
+            <param name="toDate">toDate (DateTime)</param>
+            <returns>List Of Employee Attendances Graphs by ID, FromDate, ToDate.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceSingle(System.Int32,System.DateTime)">
+            <summary>
+            To Get Employee Attendances Single by ID, Date.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="date">date (DateTime)</param>
+            <returns>List of Employee Attendances Single by ID, Date.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceLead(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Employee Attendance Lead Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of Employee Attendance Lead by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceLeadCount">
+            <summary>
+            To Get Employee Attendance LeadCount
+            </summary>
+            <returns>List of Employee Attendance Lead Count</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeWhoIsIn(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Employee Who Is In Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of Employee Who Is In by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.addEmployeeAttendanceRequest(Entities.Models.EmployeeAttendanceRequest)">
+            <summary>
+            To Add Employee Attendance Request.
+            </summary>
+            <param name="model">EmployeeAttendanceRequest model</param>
+            <returns>Insert Employee Attendance Request Data </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceController.GetEmployeeAttendanceRequest(Entities.Models.PagingRequest)">
+            <summary>
+            To Get List of Employee Attendance Request Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of Employee Attendance Request By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.GetAttendanceMappings(Entities.Models.PagingRequest)">
+            <summary>
+            To Get AttendanceMappings by Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of AttendanceMappings by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.GetAttendanceMappingById(System.Int32)">
+            <summary>
+            To Get AttendanceMapping List by Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of AttendanceMapping by Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.AddAttendanceMapping(Entities.Models.AttendanceMapping)">
+            <summary>
+            To Add Attendance Mapping
+            </summary>
+            <param name="body">AttendanceMapping body</param>
+            <returns>Insert or check duplicate Attendance Mapping Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.EditAttendanceMapping(System.Int32,Entities.Models.AttendanceMapping)">
+            <summary>
+            To Edit Attendance Mapping by Id
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">AttendanceMapping body</param>
+            <returns>Update or check duplicate Attendance Mapping Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.DeleteAttendanceMappingById(System.Int32)">
+            <summary>
+            To Delete Attendance Mapping By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Deleted Attendance Mapping Data By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendanceMappingController.GetAttendanceMappingExport">
+            <summary>
+            To Get Attendance Mapping Data for Export
+            </summary>
+            <returns>List Of Attendance Mapping which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.GetAttendancePlan(Entities.Models.PagingRequest)">
+            <summary>
+            To Get List Of AttendancePlan by Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns></returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.GetAttendancePlanById(System.Int32)">
+            <summary>
+            To Get List Of AttendancePlan By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of AttendancePlan By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.AddAttendancePlan(Entities.Models.AttendancePlan)">
+            <summary>
+            To Add AttendancePlan
+            </summary>
+            <param name="body">AttendancePlan body</param>
+            <returns>Insert AttendancePlan Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.EditAttendancePlan(System.Int32,Entities.Models.AttendancePlan)">
+            <summary>
+            To Edit AttendancePlan by Id
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">AttendancePlan body</param>
+            <returns>To Update AttendancePlan by Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.DeleteAttendancePlanById(System.Int32)">
+            <summary>
+            To Delete AttendancePlan By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Delete AttendancePlan  Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.AttendancePlanController.GetAttendancePlanExport">
+            <summary>
+            To Get AttendancePlan Data for Export
+            </summary>
+            <returns>List Of AttendancePlan which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.GetBioMatrixDevice(Entities.Models.PagingRequest)">
+            <summary>
+            To Get BioMatrixDevice by Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of BioMatrixDevice by Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.GetBioMatrixdeviceById(System.Int32)">
+            <summary>
+            To Get BioMatrixDevice by ID.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of BioMatrixDevice By ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.GetBioMatrixDeviceDrp">
+            <summary>
+            To Get BioMatrixDevice DropDownList.
+            </summary>
+            <returns>DropdownList of BioMatrixDevice.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.AddBioMatrixDevice(Entities.Models.BioMatrixDevice)">
+            <summary>
+            To Add BioMatrixDevice.
+            </summary>
+            <param name="body">BioMatrixDevice body</param>
+            <returns>Insert BioMatrixDevice Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.EditBioMatrixDevice(System.Int32,Entities.Models.BioMatrixDevice)">
+            <summary>
+            To Edit BioMatrixDevice By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">BioMatrixDevice body</param>
+            <returns>Update BioMatrixDevice Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BioMatrixDeviceController.DeleteBioMatrixDeviceById(System.Int32)">
+            <summary>
+            To Delete BioMatrixDevice By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>BioMatrixDevice Data deleted by ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.GetBranches(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Branch List by Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Branch by Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.GetBranchById(System.Int32)">
+            <summary>
+            To Get Branch List By Id.
+            </summary>
+            <param name="id">id (int) </param>
+            <returns>List of Branch By ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.GetBranchDrp">
+            <summary>
+            To Get Branch Dropdownlist.
+            </summary>
+            <returns>Dropdown List of Branch.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.AddBranch(Entities.Models.Branch)">
+            <summary>
+            To Add Branch.
+            </summary>
+            <param name="body">Branch body</param>
+            <returns>Insert Or Check Duplicate Branch Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.EditBranch(System.Int32,Entities.Models.Branch)">
+            <summary>
+            To Edit Branch Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Branch body</param>
+            <returns>Update or Check Duplicate Branch Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.DeleteBranchById(System.Int32)">
+            <summary>
+            To Delete Branch Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Branch Data Deleted or not deleted By Id. </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.DeleteAllBranch">
+            <summary>
+            To Delete All Branch Data.
+            </summary>
+            <returns>All Branch Data Deleted.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.BranchController.GetBranchExport">
+            <summary>
+            To Get Branch Data for Export
+            </summary>
+            <returns>List Of Branch which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.GetCities(Entities.Models.PagingRequest)">
+            <summary>
+            To Get List Of Cities By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Cities By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.GetCityById(System.Int32)">
+            <summary>
+            To Get List Of City By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of City By ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.GetCityDrp">
+            <summary>
+            To Get City DropdownList.
+            </summary>
+            <returns>Dropdownlist Of City.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.AddCity(Entities.Models.City)">
+            <summary>
+            To Add City.
+            </summary>
+            <param name="body">City body</param>
+            <returns>Insert or Check Duplicate City Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.EditCity(System.Int32,Entities.Models.City)">
+            <summary>
+            To Edit City Data By ID.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">City body</param>
+            <returns>Update Or Check Duplicate Data By ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.AddCityMany(Entities.Models.CityImport)">
+            <summary>
+            To Add Multiple City. (Import)
+            </summary>
+            <param name="body">CityImport body</param>
+            <returns>Import Multiple City Data. Also check Duplicate Data in List.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.DeleteCityById(System.Int32)">
+            <summary>
+            To delete City Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted City By ID.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.DeleteAllCity">
+            <summary>
+            To Delete All City Data.
+            </summary>
+            <returns>Deleted All City Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CityController.GetCityExport">
+            <summary>
+            To Get City Data for Export
+            </summary>
+            <returns>List Of City which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompanyActivationController.GetCompanySettingById(System.Int32)">
+            <summary>
+            To Get Company Setting List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Company Setting By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompanyActivationController.AddUpdateCompanySetting(Entities.Models.CompanySetting)">
+            <summary>
+            To Add Or Edit Company Setting data.
+            </summary>
+            <param name="body">CompanySetting body</param>
+            <returns>Insert Or Update Company Setting Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.GetCompOffConfigAssignByCompOffConfigId(System.Int32)">
+            <summary>
+            To Get Tree of CompOff ConfigAssign By CompOffConfigId.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Make Tree of CompOff ConfigAssign By CompOffConfigId.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.GetCompOffConfigAssignDrp(System.Int32)">
+            <summary>
+            To Get CompOff Config Assign Dropdownlist By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Dropdownlist of CompOff Config Assign By Id. </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.AddCompOffConfigAssign(Entities.Models.CompOffConfigAssign)">
+            <summary>
+            To Add Compoff Config Assign.
+            </summary>
+            <param name="body">CompOffConfigAssign body</param>
+            <returns>Insert CompOff Config Assign Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.DeleteCompOffConfigAssignByOrgnizationId(System.Int32,System.Int32)">
+            <summary>
+            To Delete CompOff Config Assign Data By Organization Id.
+            </summary>
+            <param name="CompOffConfigId">CompOffConfigId (int)</param>
+            <param name="OrganizationId">OrganizationId (int)</param>
+            <returns>Deleted CompOff Config Assign Data By Organization Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.DeleteCompOffConfigAssignByBranchId(System.Int32,System.Int32)">
+            <summary>
+            To Delete CompOff Config Assign Data By BranchId Id.
+            </summary>
+            <param name="CompOffConfigId">CompOffConfigId (int)</param>
+            <param name="BranchId">BranchId (int)</param>
+            <returns>Deleted CompOff Config Assign Data By BranchId Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.DeleteCompOffConfigAssignByDepartmentId(System.Int32,System.Int32)">
+            <summary>
+            To Delete CompOff Config Assign Data By DepartmentId Id.
+            </summary>
+            <param name="CompOffConfigId">CompOffConfigId (int)</param>
+            <param name="DepartmentId">DepartmentId (int)</param>
+            <returns>Deleted CompOff Config Assign Data By DepartmentId Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigAssignController.DeleteCompOffConfigAssignByDesignationId(System.Int32,System.Int32)">
+            <summary>
+            To Delete CompOff Config Assign Data By DesignationId Id.
+            </summary>
+            <param name="CompOffConfigId">CompOffConfigId (int)</param>
+            <param name="DesignationId">DesignationId (int)</param>
+            <returns>Deleted CompOff Config Assign Data By DesignationId Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigPlanController.GetCompOffConfigPlan(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Compoff Configuration Plan List by Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of compoff Configuration Plan</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigPlanController.GetCompOffConfigPlanById(System.Int32)">
+            <summary>
+            To Get Compoff Configuration Plan List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of Compoff Configuration Plan  By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigPlanController.AddCompOffConfigPlan(Entities.Models.CompOffConfigPlan)">
+            <summary>
+            To Add Compoff Configuration Plan 
+            </summary>
+            <param name="body">CompOffConfigPlan body</param>
+            <returns>Insert CompOff Configuration Plan by Id </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigPlanController.SetDefaultCompOffConfigLeavePlanById(System.Int32)">
+            <summary>
+            To Set Default CompOff Configuration Leave Plan By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Set Default CompOff Configuration Leave Plan By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigurationController.GetCompOffConfigurationById(System.Int32)">
+            <summary>
+            To Get CompOffConfiguration  List  ById.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of CompOffConfiguration By Id. </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigurationController.AddCompOffConfiguration(Entities.Models.CompOffConfiguration)">
+            <summary>
+            To Add CompOffConfiguration.
+            </summary>
+            <param name="body">CompOffConfiguration body</param>
+            <returns>Insert CompOffConfiguration Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffConfigurationController.EditCompOffConfiguration(System.Int32,Entities.Models.CompOffConfiguration)">
+            <summary>
+            To Edit CompOffConfiguration Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">CompOffConfiguration body</param>
+            <returns>Update CompOffConfiguration Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveApplyingController.GetCompOffLeaveApplyingById(System.Int32)">
+            <summary>
+            To Get CompOff Leave Applying List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of CompOff Leave Applying By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveApplyingController.AddCompOffLeaveApplying(Entities.Models.CompOffLeaveApplying)">
+            <summary>
+            To Add CompOff Leave.
+            </summary>
+            <param name="body">CompOffLeaveApplying body</param>
+            <returns>Insert CompOff Leave Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveApplyingController.EditCompOffLeaveApplying(System.Int32,Entities.Models.CompOffLeaveApplying)">
+            <summary>
+            To Edit Compoff Leave Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">CompOffLeaveApplying body</param>
+            <returns>Update CompOff Leave Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveQuotaController.GetCompOffLeaveQuotaById(System.Int32)">
+            <summary>
+            To Get CompOff Leave Quota List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of CompOff Leavae Quota By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveQuotaController.AddCompOffLeaveQuota(Entities.Models.CompOffLeaveQuota)">
+            <summary>
+            To Add CompOff Leave Quota. 
+            </summary>
+            <param name="body">CompOffLeaveQuota body</param>
+            <returns>Insert CompOff Leave Quota Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveQuotaController.EditCompOffLeaveQuota(System.Int32,Entities.Models.CompOffLeaveQuota)">
+            <summary>
+            To Edit CompOff Leave Quota By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">CompOffLeaveQuota body</param>
+            <returns>Update CompOff Leave Quota By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveRestrictionController.GetCompOffLeaveRestrictionById(System.Int32)">
+            <summary>
+            To Get CompOff Leave Restriction List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of CompOff Leave Restriction  By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveRestrictionController.AddCompOffLeaveRestriction(Entities.Models.CompOffLeaveRestriction)">
+            <summary>
+            To Add CompOff Leave Restriction. 
+            </summary>
+            <param name="body"></param>
+            <returns>Insert CompOff Leave Restriction  Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffLeaveRestrictionController.EditCompOffLeaveRestriction(System.Int32,Entities.Models.CompOffLeaveRestriction)">
+            <summary>
+            To Edit CompOff Leave Restriction By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">CompOffLeaveRestriction body</param>
+            <returns>Update CompOff Leave Restriction  By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.GetCompOffRequestByIdAsync(System.Int32)">
+            <summary>
+            To Get CompoffRequest List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of CompoffRequest By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.addCompOffRequestAsync(Entities.Models.CompOffRequest)">
+            <summary>
+            To Add CompoffRequest
+            </summary>
+            <param name="body">CompOffRequest body</param>
+            <returns>Insert Or check Insufficient work time or Check Maximum Time</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.GetCompOffRequestPaginateAsync(Entities.Models.PagingRequest)">
+            <summary>
+            To Get CompoffRequest List By Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of CompoffRequest List By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.GetCompOffRequestLeaderPaginateAsync(Entities.Models.PagingRequest)">
+            <summary>
+            To Get CompoffRequest Leader List By Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of CompoffRequest Leader By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.GetCompOffRequestAdminPaginateAsync(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Compoff Request Admin List By Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of CompoffRequest Admin By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.DeleteCompOffRequestByIdAsync(System.Int32)">
+            <summary>
+            To Delete Compoff Request By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Deleted Compoff Request Data By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.approvedRejectCompOffRequestAsync(System.Int32,Entities.Models.CompOffRequestApproveReject)">
+            <summary>
+            To Edit Approve and Rejected Compoff Request 
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">CompOffRequestApproveReject body</param>
+            <returns>Update Approve and Rejected Compoff Request Data </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CompOffRequestController.GetCompOffBalanceByIdAsync(System.Int32)">
+            <summary>
+            To Get Compoff Balance List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Compoff Balance By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.GetCountries(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Country List By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Countries By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.GetCountriesDrp">
+            <summary>
+            To Get Countries DropDownList.
+            </summary>
+            <returns>DropdownList Of Countries.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.GetCountryById(System.Int32)">
+            <summary>
+            To Get Country List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List of Countries By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.AddCountry(Entities.Models.Countries)">
+            <summary>
+            To Add Country.
+            </summary>
+            <param name="body">Countries body</param>
+            <returns>Insert Countries Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.EditCountry(System.Int32,Entities.Models.Countries)">
+            <summary>
+            To Edit Country Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Countries body</param>
+            <returns>Update Countries Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.AddCountryMany(Entities.Models.CountriesImport)">
+            <summary>
+            To Add Multiple Countries. (Import)
+            </summary>
+            <param name="body">CountriesImport body</param>
+            <returns>Import Multiple Country Data. Also check Duplicate Data in List.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.DeleteCountryById(System.Int32)">
+            <summary>
+            To Delete Country Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Country Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.DeleteAllCountry">
+            <summary>
+            To Delete All Country Data.
+            </summary>
+            <returns>Deleted All Countries Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.CountriesController.getCountryExport">
+            <summary>
+            To Get Country Data for Export
+            </summary>
+            <returns>List Of Country which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DashboardController.GetDashboardDetailByIdAsync(System.Int32)">
+            <summary>
+            To Get Dashboard Details List By Id
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List of Dashboard Details By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.GetDateFormats(Entities.Models.PagingRequest)">
+            <summary>
+            To get Date Format Pagination.
+            </summary>
+            <param name="paging">PagingRequest Paging</param>
+            <returns>List Of DateForamat by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.GetDateFormatsDrp">
+            <summary>
+            To Get DateFormats Dropdownlist
+            </summary>
+            <returns>Dropdown List of DateFormat</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.GetDateFormatById(System.Int32)">
+            <summary>
+            To Get DateFormat By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of Dateformats By ID</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.AddDateFormat(Entities.Models.DateFormat)">
+            <summary>
+            To Add DateFormat
+            </summary>
+            <param name="body">DateFormat body</param>
+            <returns>Insert or Check Duplicate DateFormat Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.EditDateFormat(System.Int32,Entities.Models.DateFormat)">
+            <summary>
+            To Edit DateFormat Data
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">DateFormat body</param>
+            <returns>Update or Check Duplicate DateFormat Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.DeleteDateFormatById(System.Int32)">
+            <summary>
+            To Delete DateFormat By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>DateFormat data Deleted By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.DeleteAllDateFormat">
+            <summary>
+            To Delete All DateFormat Data
+            </summary>
+            <returns>Deleted All Dateformat Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DateFormatController.GetDateFormatExport">
+            <summary>
+            To Get Dateformat Data for Export
+            </summary>
+            <returns>List Of Dateformat which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.GetDefineTeam(Entities.Models.PagingRequest)">
+            <summary>
+            To get DefineTeam Pagination.
+            </summary>
+            <param name="paging">PagingRequest Paging</param>
+            <returns>List Of DateForamat by Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.GetDefineTeamdrp">
+            <summary>
+            To Get DefineTeam Dropdownlist
+            </summary>
+            <returns>Dropdown List of DefineTeam</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.GetDefineTeamById(System.Int32)">
+            <summary>
+            To Get DefineTeam By Id.
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List Of DefineTeam By ID</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.AddDefineTeam(Entities.Models.DefineTeam)">
+            <summary>
+            To Add DefineTeam.
+            </summary>
+            <param name="body">DefineTeam body</param>
+            <returns>Insert or Check Duplicate DefineTeam Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.EditDefineTeam(System.Int32,Entities.Models.DefineTeam)">
+            <summary>
+            To Edit DefineTeam By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">DefineTeam body</param>
+            <returns>Update DefineTeam Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.DeleteDefineTeamById(System.Int32)">
+            <summary>
+            To Delete DefineTeam data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted DefineTeam Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.getDefineTeamEmployeeList(System.Int32)">
+            <summary>
+            To Get DefineTeam Employee List By Team Id.
+            </summary>
+            <param name="TeamId">TeamId (int)</param>
+            <returns>List Of DefineTeam Employee By Team Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.getDefineTeamTeamEmployeeList(System.String)">
+            <summary>
+            To Get DefineTeam Team Employee List By TeamId.
+            </summary>
+            <param name="TeamId">TeamId (string)</param>
+            <returns>List Of DefineTeam Team Employee By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DefineTeamController.GetDefineTeamExport">
+            <summary>
+            To Get DefineTeam Data for Export
+            </summary>
+            <returns>List Of DefineTeam which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.GetDepartments(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Department List By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Department By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.GetDepartmentById(System.Int32)">
+            <summary>
+            To Get Department List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Department By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.GetDepartmentDrp">
+            <summary>
+            To Get Department DropdownList.
+            </summary>
+            <returns>Dropdownlist of Department.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.AddDepartment(Entities.Models.Department)">
+            <summary>
+            To Add Department.
+            </summary>
+            <param name="body">Department body</param>
+            <returns>Insert Or Check Duplicate Department Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.EditDepartment(System.Int32,Entities.Models.Department)">
+            <summary>
+            To Edit Department Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Department body</param>
+            <returns>Update or Check Dulicate Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.DeleteDepartmentById(System.Int32)">
+            <summary>
+            To Delete Department Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Department Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.DeleteAllDepartment">
+            <summary>
+            To Delete all Department Data.
+            </summary>
+            <returns>All Department Data deleted.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DepartmentController.GetDepartmentExport">
+            <summary>
+            To Get Department Data for Export
+            </summary>
+            <returns>List Of Department which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.GetDesignations(Entities.Models.PagingRequest)">
+            <summary>
+            To get Designations List By Pagination
+            </summary>
+            <param name="paging">PagingRequest paging.</param>
+            <returns>List Of Designations By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.GetDesignationDrp">
+            <summary>
+            To Get Designations DropdownList
+            </summary>
+            <returns>DropdownList of Designations</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.GetDesignationById(System.Int32)">
+            <summary>
+            To Get Designations List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Designations By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.AddDesignation(Entities.Models.Designation)">
+            <summary>
+            To Add Designations.
+            </summary>
+            <param name="body">Designation body</param>
+            <returns>Insert Or Check Duplicate Designations Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.EditDesignation(System.Int32,Entities.Models.Designation)">
+            <summary>
+            To Edit Designations Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Designation body</param>
+            <returns>Update or Check Duplicate Designations Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.DeleteDesignationById(System.Int32)">
+            <summary>
+            To Delete Designations Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Designations Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.DeleteAllDesignation">
+            <summary>
+            To Delete All Designations Data.
+            </summary>
+            <returns>All Designations Data Deleted</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationController.getDesignationExport">
+            <summary>
+            To Get Designations Data for Export
+            </summary>
+            <returns>List Of Designations which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationPermissionController.GetAssignDesignationPermissions(System.Int32)">
+            <summary>
+            To Get Assign Designation Permission List By Designation Id
+            </summary>
+            <param name="DesignationId">DesignationId(int)</param>
+            <returns>List Of Assign Designation Permission By Designation Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationPermissionController.AddUpdateAssignDesignationPermissionAsync(Entities.Models.AssignDesignationPermissionInsert)">
+            <summary>
+            To Add or Edit Assign Designation Permission 
+            </summary>
+            <param name="body">AssignDesignationPermissionInsert body</param>
+            <returns>Insert or Update Assign Designation Permission Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationPermissionController.CopyDesignationPermissionAsync(Entities.Models.CopyDesignationPermission)">
+            <summary>
+            To Copy Designation Permission
+            </summary>
+            <param name="body">CopyDesignationPermission body</param>
+            <returns>Copy Designation Permission</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationPermissionController.GetDesignationPermissionDrp">
+            <summary>
+            To Get Designation Permissiobn DropdownList
+            </summary>
+            <returns>Dropdown List of Designation Permission</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationStandardPermissionController.GetAssignDesignationStandardPermissions(System.Int32)">
+            <summary>
+            To Get Assign Designation Standard Permissions List by Designation Id
+            </summary>
+            <param name="DesignationId">DesignationId(int)</param>
+            <returns>List of Assign Designation Standard Permissions By Designation Id </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.DesignationStandardPermissionController.addUpdateAssignDesignationStandardPermission(Entities.Models.AssignDesignationStandardPermissionInsert)">
+            <summary>
+            To Add or Edit Assign Designation Standard Permissions 
+            </summary>
+            <param name="body">AssignDesignationStandardPermissionInsert body</param>
+            <returns>Insert Or Update Assign Designation Standard Permissions</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.GetEducationAttachments(Entities.Models.PagingRequest)">
+            <summary>
+            To Get List Of EducationAttachments By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of EducationAttachments By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.GetEducationAttachmentDrp">
+            <summary>
+            To Get EducationAttachments DropdownList.
+            </summary>
+            <returns>DropdownList of EducationAttachments.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.GetEducationAttachmentById(System.Int32)">
+            <summary>
+            To Get List of EducationAttachments By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of EducationAttachments By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.AddEducationAttachment(Entities.Models.EducationAttachmentMaster)">
+            <summary>
+            To Add Education Attachments (Master).
+            </summary>
+            <param name="body">EducationAttachmentMaster body</param>
+            <returns>Insert Or Check Duplicate EducationAttachments (Master) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.EditEducationAttachment(System.Int32,Entities.Models.EducationAttachmentMaster)">
+            <summary>
+            To Edit Education Attachment (Master) By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">EducationAttachmentMaster body</param>
+            <returns>Update Or Check Duplicate EducationAttachment(Master) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.DeleteEducationAttachmentById(System.Int32)">
+            <summary>
+            To Delete Education Attachment (Master) By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Education Attachment (Master) Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.DeleteAllEducationAttachment">
+            <summary>
+            To Delete All Education Attachment (Master) Data.
+            </summary>
+            <returns>All Education Attachment (Master) Data Deleted.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EducationAttachmentController.GetEducationAttachmentExport">
+            <summary>
+            To Get Education Attachment (Master) Data For Export.
+            </summary>
+            <returns>List Of Education Attachment (Master) Data which is used for Export.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.Upload">
+            <summary>
+            To Add ProfilePic
+            </summary>
+            <returns>Upload Profile Picture</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.GetEmployee(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Employee List by Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of Employee by Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.GetEmployeeDrp">
+            <summary>
+            To Get Employee DropdownList.
+            </summary>
+            <returns>Dropdownlist of Employee.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.getEmployeeProfileById(System.Int32)">
+            <summary>
+            To Get Employee Profile Details by Id
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List of Employee Profile Details By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.GetEmployeeById(System.Int32)">
+            <summary>
+            To Get Employee List By Id
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Employee By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.AddEmployee(Entities.Models.Employee)">
+            <summary>
+            To Add Employee.
+            </summary>
+            <param name="body">Employee body</param>
+            <returns>Insert Or Check Duplicate Employee Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.EditEmployee(System.Int32,Entities.Models.Employee)">
+            <summary>
+            To Edit Employee Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Employee body</param>
+            <returns>Update Or Check Duplicate Employee Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.editEmployeePrimaryProfile(Entities.Models.Employee)">
+            <summary>
+            To Edit Employee Primary Profile Details.
+            </summary>
+            <param name="body">Employee body</param>
+            <returns>Update Or Check Duplicate Employee Primary Profile Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.AddEmployeeMany(Entities.Models.EmployeeImport)">
+            <summary>
+            To Add Multiple Employee. (Import)
+            </summary>
+            <param name="body">EmployeeImport body</param>
+            <returns>Import Multiple Employee Data. Also check Duplicate Data in List.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.DeleteEmployeeById(System.Int32)">
+            <summary>
+            To Delete Employee By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Employee Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.DeleteAllEmployee">
+            <summary>
+            To Delete All Employee.
+            </summary>
+            <returns>All Employee Data deleted</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.getEmployeeExport">
+            <summary>
+            To Get Employee Data for Export
+            </summary>
+            <returns>List Of Employee which is used for Export</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.ChangePassword(System.Int32,Entities.Models.ChangePasswordModel)">
+            <summary>
+            To Change Password By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">ChangePasswordModel body</param>
+            <returns>Update Password By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.GetWorkScheduleEmployeeReportings(System.String)">
+            <summary>
+            To Get WorkSchedule EmployeeReportings List By Employee Id.
+            </summary>
+            <param name="EmployeeId">EmployeeId (string)</param>
+            <returns>List of  WorkSchedule EmployeeReportings By Employee Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeController.GetLeaveEmployeeReportings(System.String)">
+            <summary>
+            To Get Leave EmployeeReportings List By Employee Id.
+            </summary>
+            <param name="EmployeeId">EmployeeId (string)</param>
+            <returns>List of  Leave EmployeeReportings By Employee Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.GetEmployeeEducation(System.Int32)">
+            <summary>
+            To Get Employee Education List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of Employee Education By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.GetEmployeeEducationById(System.Int32)">
+            <summary>
+            To Get Employee Education List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of Employee Education By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.AddEmployeeEducation(Entities.Models.EmployeeEducation)">
+            <summary>
+            To add Employee Education
+            </summary>
+            <param name="body">EmployeeEducation body</param>
+            <returns>Insert Employee Education Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.EditEmployeeEducation(System.Int32,Entities.Models.EmployeeEducation)">
+            <summary>
+            To Edit Employee Education By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">EmployeeEducation body</param>
+            <returns>Update Employee Education By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.DeleteEmployeeEducationById(System.Int32)">
+            <summary>
+            To Delete Employee Education By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Deleted Employee Education Data By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.DeleteAllEmployeeEducation">
+            <summary>
+            To Delete All Employee Education Data.
+            </summary>
+            <returns>All Employee Education Data Deleted</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeEducationController.AddEducationAttachment">
+            <summary>
+            To Add Education Attachment
+            </summary>
+            <returns>Insert Employee Education Attachment Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetAssignEmployeePermissions(System.Int32)">
+            <summary>
+            To Get Assign Employee Permission List By EmployeeId
+            </summary>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List Of Assign Employee Permission By EmployeeId</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.addUpdateAssignEmployeePermission(Entities.Models.AssignEmployeeSpecialPermissionInsert)">
+            <summary>
+            To Add or Edit Assign Employee Permission
+            </summary>
+            <param name="body">AssignEmployeeSpecialPermissionInsert body</param>
+            <returns>Insert Or Update Assign Employee Permission.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetUserPermissions(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            To Get User Permission List By designation Id and By UserTypeId and By EmployeeId
+            </summary>
+            <param name="designationId">designationId(int)</param>
+            <param name="userTypeId">userTypeId(int)</param>
+            <param name="employeeId">employeeId(int)</param>
+            <returns>List of User Permission By designation Id and By UserTypeId and By EmployeeId</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetUserFieldPermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get User Field Permission List By designationId and By EmployeeId
+            </summary>
+            <param name="designationId">designationId(int)</param>
+            <param name="employeeId">employeeId(int)</param>
+            <returns>List of User Field Permission By Designation Id and By EmployeeId </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetAssignFormEmpPermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get Assign Form Employee Permissions List by PageId and by Employee Id
+            </summary>
+            <param name="PageId">PageId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List Of Assign Form Employee Permissions by PageId and by Employee Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.AddUpdateAssignTabEmpPermission(Entities.Models.AssignTabPermissionEmployeeInsert)">
+            <summary>
+            To Add or Edit Assign Tab Employee Permission
+            </summary>
+            <param name="body">AssignTabPermissionEmployeeInsert body</param>
+            <returns>Insert Or Update Assign Tab Employee Permission Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.AddUpdateAssignFormEmpPermission(Entities.Models.AssignFormPermissionEmployeeInsert)">
+            <summary>
+            To Add or Edit Assign Form Employee Permission
+            </summary>
+            <param name="body">AssignFormPermissionEmployeeInsert body</param>
+            <returns>Insert Or Update Assign Form Employee Permission </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.CopyAssignFormPermissionEmployee(Entities.Models.AssignFormPermissionEmployeeCopy)">
+            <summary>
+            To Copy Assign Form Permission Employee 
+            </summary>
+            <param name="body">AssignFormPermissionEmployeeCopy body</param>
+            <returns>Copy Assign Form Permission Employee </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetAssignSubPageRecordPermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get Assign Sub Page Record Permission List By TabId and EmployeeId
+            </summary>
+            <param name="TabId"></param>
+            <param name="EmployeeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetAssignPageRecordEmpPermissions(System.Int32,System.Int32)">
+            <summary>
+             To Get Assign Page Record Employee Permission By PageId and By EmployeeId
+            </summary>
+            <param name="PageId">PageId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns></returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.addUpdateAssignPageRecordEmpPermission(Entities.Models.PageRecordPermissionEmployeeInsert)">
+            <summary>
+            To Add or Edit Assign Page Record Employee Permission
+            </summary>
+            <param name="body">PageRecordPermissionEmployeeInsert body</param>
+            <returns>Insert or Update Assign Page Record Employee Permission</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.addUpdateAssignPageRecordFieldEmpPermission(Entities.Models.PageRecordFieldPermissionEmployee)">
+            <summary>
+            To Add or Edit Assign Page Record Field Employee Permission
+            </summary>
+            <param name="body">PageRecordFieldPermissionEmployee body</param>
+            <returns>Insert or Update Assign Page Record Field Employee Permission</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.AddUpdateAssignSubPageRecordPermission(Entities.Models.SubPageRecordPermissionEmployeeInsert)">
+            <summary>
+            To Add Or Edit Assign Sub Page Record Permission (Employee)
+            </summary>
+            <param name="body">SubPageRecordPermissionEmployeeInsert body</param>
+            <returns>Insert or Update Sub Page Record Permission Employee Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.AddUpdateAssignSubPageRecordFieldPermission(Entities.Models.SubPageRecordFieldPermissionEmployee)">
+            <summary>
+            To Add Or Update Assign Sub Page Record Field Permission
+            </summary>
+            <param name="body">SubPageRecordFieldPermissionEmployee body</param>
+            <returns>Insert or Update Assign Sub Page Record Field Permission data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetUserFormPermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get User Form Permission List By UserRoleId and By EmployeeId (LoginTime)
+            </summary>
+            <param name="userRoleId">UserRoleId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List of User Form Permission By UserRoleId and By EmployeeId</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetUserRecordPermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get User Record Permission List By UserRoleId and By EmployeeId (LoginTime)
+            </summary>
+            <param name="userRoleId">UserRoleId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List of User Record Permission By UserRoleId and By EmployeeId (LoginTime)</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetUserRecordEmployeePermissions(System.Int32)">
+            <summary>
+            To Get User Record Employee Permissions List By EmployeeId
+            </summary>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List of User Record Employee Permissions By Employee Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeSpecialPermissionController.GetAssignPageRecordUserEmployeePermissions(System.Int32,System.Int32)">
+            <summary>
+            To Get Assign Page Record User Employee Permission List By PageId and By EmployeeId
+            </summary>
+            <param name="PageId">PageId (int)</param>
+            <param name="EmployeeId">EmployeeId (int)</param>
+            <returns>List Of Assign Page Record User Employee Permission By PageId and By EmployeeId</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.GetEmployeeStatus(Entities.Models.PagingRequest)">
+            <summary>
+            To Get List of Employee Status By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging.</param>
+            <returns>List of Employee Status By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.GetEmployeeStatusDrp">
+            <summary>
+            To Get Employee Status DropdownList
+            </summary>
+            <returns>Dropdownlist of Employee Status.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.GetEmployeeStatusById(System.Int32)">
+            <summary>
+            To Get EmployeeStatus List By Id
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Employee Status By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.AddEmployeeStatus(Entities.Models.EmployeeStatus)">
+            <summary>
+            To Add Employee Status
+            </summary>
+            <param name="body">EmployeeStatus body</param>
+            <returns>Insert Or Check Duplicate Employee Status Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.EditEmployeeStatus(System.Int32,Entities.Models.EmployeeStatus)">
+            <summary>
+            To Edit Employee Status By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">EmployeeStatus body</param>
+            <returns>Update and Check Duplicate Employee Status Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.DeleteEmployeeStatusById(System.Int32)">
+            <summary>
+            To Delete Employee Status By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Or Check Not Deleted Employee Status By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeStatusController.DeleteAllEmployeeStatus">
+            <summary>
+            To Delete All Employee Status Data.
+            </summary>
+            <returns>Deleted All Employee Status Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeWorkExperienceController.Upload">
+            <summary>
+            To Upload Work Experience Documents.
+            </summary>
+            <returns>Upload work Experience Documents.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.EmployeeWorkExperienceController.GetEmployeeWorkExperience(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.GetFields(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Field List By Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List Of Fields By Pagination.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.GetFieldDrp">
+            <summary>
+            To Get Field DropDownList.
+            </summary>
+            <returns>DropdownList of Fields.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.GetFieldById(System.Int32)">
+            <summary>
+            To Get Field List By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>List Of Field By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.AddField(Entities.Models.Field)">
+            <summary>
+            To Add Field.
+            </summary>
+            <param name="body">Field body</param>
+            <returns>Insert Field Data.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.EditField(System.Int32,Entities.Models.Field)">
+            <summary>
+            To Edit Field Data By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <param name="body">Field body</param>
+            <returns>Update Field Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.DeleteFieldById(System.Int32)">
+            <summary>
+            To Delete Field By Id.
+            </summary>
+            <param name="id">id (int)</param>
+            <returns>Deleted Fiels Data By Id.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.GetPagesDrp">
+            <summary>
+            To Get Pages DropdownList.
+            </summary>
+            <returns>DropdownList of Pages.</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.FieldController.GetFieldByActivityId(Entities.Models.PagingRequest)">
+            <summary>
+            To Get FieldByActivity Id by Pagination.
+            </summary>
+            <param name="paging">PagingRequest paging.</param>
+            <returns>List of  FieldByActivity Id by Pagination. </returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.GetGates(Entities.Models.PagingRequest)">
+            <summary>
+            To Get Gates List by Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of Gates by Paginations</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.GetGatedrp">
+            <summary>
+            To Get Gate Dropdownlist
+            </summary>
+            <returns>List of Gate Dropdownlist</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.GetGateById(System.Int32)">
+            <summary>
+            To Get List of Gates By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of Gates By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.AddGate(Entities.Models.Gate)">
+            <summary>
+            To Add Gate
+            </summary>
+            <param name="body">Gate body</param>
+            <returns>Insert Gate Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.EditGate(System.Int32,Entities.Models.Gate)">
+            <summary>
+            To Edit Gate By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">Gate body</param>
+            <returns>Update Gate Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GateController.DeleteGateById(System.Int32)">
+            <summary>
+            To Delete Gate By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>Delete Gate Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.GetGeoLocationPaginate(Entities.Models.PagingRequest)">
+            <summary>
+            To Get GeoLocation List By Pagination
+            </summary>
+            <param name="paging">PagingRequest paging</param>
+            <returns>List of GeoLocation By Pagination</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.GetGeoLocationDrp">
+            <summary>
+            To Get GeoLocation Dropdownlist
+            </summary>
+            <returns>Dropdownlist of GeoLocation</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.GetGeoLocationById(System.Int32)">
+            <summary>
+            To Get GeoLocation List By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns>List of GeoLocation By Id</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.AddGeoLocation(Entities.Models.GeoLocation)">
+            <summary>
+            To Add GeoLocation 
+            </summary>
+            <param name="body">GeoLocation body</param>
+            <returns>Insert Geo Location Data</returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.EditGeoLocation(System.Int32,Entities.Models.GeoLocation)">
+            <summary>
+            To Edit Geo Location By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <param name="body">GeoLocation body</param>
+            <returns>Update Geo Location Data By Id</returns>
+            
+        </member>
+        <member name="M:HRSenseWebAPI.Controllers.GeoLocationController.DeleteGeoLocationById(System.Int32)">
+            <summary>
+            To Delete Geo Location By Id
+            </summary>
+            <param name="id">id(int)</param>
+            <returns></returns>
+        </member>
+        <member name="M:HRSenseWebAPI.Filters.CustomAuthorizeFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>  
+            This will Authorize User  
+            </summary>  
+            <returns></returns>  
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "Item";
+}
+@section Content{
+    <div id="emplist">
+        <div class="main-header-container">
+            <h1>Item List</h1>
+        </div>
+        <div class="page-container clearfix">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>
+                        Inventory Items
+                    </h2>
+                    <div class="table-add-btn" style="float:right;position:relative;top:-40px;">
+                        @Html.ActionLink("Add New", "Create", "InventoryItem", null, new { @class = "btn common-btn" })
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <table class="display nowrap table table-hover" id="tblProducts">
+                        <thead>
+                            <tr>
+                                <td>
+                                    Product ID
+                                </td>
+                                <td>
+                                    Product Name
+                                </td>
+                                <td>
+                                    Description
+                                </td>
+                                <td>
+                                    Price
+                                </td>
+                                <td>
+                                    Image
+                                </td>
+                                <td>
+                                    Edit
+                                </td>
+                                <td>
+                                    Delete
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupmenu">
+        <div class="modal fade" id="_divPayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog custom-model-small">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Delete Company</h4>
+                    </div>
+                    @Html.AntiForgeryToken()
+                    <div class="modal-body">
+                        <p>You Have No Create Any Company!First Create Company</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn common-btn" data-dismiss="modal">Close</button>
+                        <input type="button" class="btn common-btn btnAddPayment" value="Delete" id="btnSubmit" onclick="addDelete(this)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@*<script>
+
+        $(document).ready(function () {
+            $("#popupmenu").html(data)
+            $("#_divPayment").modal('show');
+        });
+    </script>*@
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            bindDatatable();
+        });
+
+        function bindDatatable() {
+            $("#tblProducts").DataTable({
+                "processing": true,
+                "serverSide": true,
+                "filter": true,
+                "orderMulti": false,
+                "destroy": true,
+                "ordering": true,
+                "ajax": {
+                    "url": '/InventoryItem/GetInventory',
+                    "type": "POST",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "ProductId", "name": "ProductId", "autoWidth": true }
+                    , { "data": "ProductName", "Name": "ProductName", "autoWidth": true }
+                    , { "data": "Description", "name": "Description", "autoWidth": true }
+                    , { "data": "Price", "name": "Price", "autoWidth": true }
+                    //, { "data": "ProductImage", "name": "ProductImage", "autoWidth": true }
+                    , {
+                        "render": function (data, type, JsonResultRow, meta) {
+                            return '<img style="width:80px;height:80px;border-radius:50px;" src="' + JsonResultRow.ProductImage.replace("~","") + '">';
+                        }
+                    }
+                    , {
+                        "render": function (data, type, full, meta) { return '<a class="btn btn-info" href="/InventoryItem/Edit/' + full.ProductId + '">Edit</a>'; }
+                      }
+                    , {
+                            data: null, render: function (data, type, row) {
+                            return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.ProductId + "'); >Delete</a>";
+                            }
+                      }
+                ]
+            });
+        }
+
+        function DeleteData(CustomerID) {
+            if (confirm("Are you sure you want to delete ...?")) {
+                Delete(CustomerID);
+            }
+            else {
+                return false;
+            }
+        }
+
+        function Delete(CustomerID) {
+            var url = '@Url.Content("~/")' + "InventoryItem/Delete";
+        $.post(url, { ID: CustomerID }, function (data) {
+            if (data == "Deleted") {
+                alert("Delete Product !");
+                oTable = $('#tblProducts').DataTable();
+                oTable.draw();
+            }
+            else {
+                alert("Something Went Wrong!");
+            }
+        });
+    }
+
+    </script>
+}
